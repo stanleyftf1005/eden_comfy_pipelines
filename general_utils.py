@@ -4,8 +4,8 @@ def find_comfy_models_dir():
     current_path = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
 
     while True:
-        # Check if "ComfyUI/models" exists in the current path
-        target_path = os.path.join(current_path, "ComfyUI", "models")
+        # Check if "comfyui/models" exists in the current path, adapted to comfydeploy file path
+        target_path = os.path.join(current_path, "comfyui", "models")
         if os.path.isdir(target_path):
             return os.path.abspath(target_path)
 
